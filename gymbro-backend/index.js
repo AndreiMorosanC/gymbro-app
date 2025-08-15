@@ -3,6 +3,8 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import routes from "./routes.js"
+import { fetchExercises } from "./service/exercises.service.js";
+
 
 dotenv.config();
 
@@ -16,6 +18,10 @@ mongoose
   .then(() => console.log("✅ Conectado a MongoDB Atlas"))
   .catch((err) => console.error("❌ Error al conectar MongoDB:", err));
 
+
+
+
+  
 app.use("/api", routes);
 
 

@@ -1,9 +1,10 @@
 import { useAuth } from "../../Context/AuthProvider.jsx";
+import Exercises from "../Exercises.jsx";
 
 const GymDashboard = ()=>{
 
       const { logout } = useAuth();
-
+      
     return(
         <div>
       <h1>Bienvenido al Gym!</h1>
@@ -13,6 +14,8 @@ const GymDashboard = ()=>{
       >
         Cerrar sesión
       </button>
+
+      <Exercises/>
     </div>
     )
 }

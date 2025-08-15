@@ -7,6 +7,8 @@ export default function App() {
 
   if (loading) return <p>Cargando...</p>;
 
+
+  
   return (
     <div>
       {user ? <GymDashboard /> : <AuthForm />}
